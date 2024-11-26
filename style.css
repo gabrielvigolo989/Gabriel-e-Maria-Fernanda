@@ -1,75 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    text-align: center;
-    color: #333;
-}
-
-.slideshow-container {
-    width: 80%;
-    margin: 20px auto;
-    position: relative;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.slideshow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* Espaçamento entre imagens */
-    animation: slide 48s infinite; /* Mais lento */
-}
-
-.slideshow img {
-    width: 200px; /* Imagens menores */
-    height: auto;
-    border: 3px solid #f00;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    12.5% { transform: translateX(-110%); }
-    25% { transform: translateX(-220%); }
-    37.5% { transform: translateX(-330%); }
-    50% { transform: translateX(-440%); }
-    62.5% { transform: translateX(-550%); }
-    75% { transform: translateX(-660%); }
-    87.5% { transform: translateX(-770%); }
-    100% { transform: translateX(0); }
-}
-
-.title {
-    color: red;
-    font-size: 2em;
-    margin: 10px 0;
-}
-
-.message {
-    font-size: 1.2em;
-    margin: 20px auto;
-    width: 60%;
-    line-height: 1.6;
-}
-
-.counter {
-    margin: 20px auto;
-    width: 60%;
-}
-
-.counter h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-#time-counter {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #444;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel e Maria Fernanda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <img src="img1.jpg" alt="Imagem 1">
+            <img src="img2.jpg" alt="Imagem 2">
+            <img src="img3.jpg" alt="Imagem 3">
+            <img src="img4.jpg" alt="Imagem 4">
+            <img src="img5.jpg" alt="Imagem 5">
+            <img src="img6.jpg" alt="Imagem 6">
+            <img src="img7.jpg" alt="Imagem 7">
+            <img src="img8.jpg" alt="Imagem 8">
+        </div>
+    </div>
+    <h1 class="title">Gabriel e Maria Fernanda</h1>
+    <p class="message">
+        Eu fico pensando em como a minha vida ficou melhor depois que você entrou nela. Às vezes, é difícil até acreditar que alguém como você está comigo. Você tem esse jeito de me fazer ver as coisas de outra forma, de me trazer paz nos dias complicados, de fazer os momentos mais simples virarem os mais especiais. Não importa o que aconteça, saber que você está ao meu lado faz tudo ficar mais fácil. Eu te admiro demais, e cada dia ao seu lado só me faz te amar ainda mais. Eu sou muito grato por ter você na minha vida, e mal posso esperar para viver ainda mais momentos juntos. EU TE AMO ❤️.
+    </p>
+    <div class="counter">
+        <h2>Compartilhando momentos há:</h2>
+        <p id="time-counter"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
