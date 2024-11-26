@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+.slideshow-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+
+.slideshow {
+    display: flex;
+    width: 800%;
+    animation: slide 16s infinite;
+}
+
+.slideshow img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    12.5% { transform: translateX(-100%); }
+    25% { transform: translateX(-200%); }
+    37.5% { transform: translateX(-300%); }
+    50% { transform: translateX(-400%); }
+    62.5% { transform: translateX(-500%); }
+    75% { transform: translateX(-600%); }
+    87.5% { transform: translateX(-700%); }
+    100% { transform: translateX(0); }
+}
+
+.title {
+    color: red;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.counter {
+    margin: 20px 0;
+}
+
+.counter h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#time-counter {
+    font-size: 1.2em;
+    font-weight: bold;
+}
